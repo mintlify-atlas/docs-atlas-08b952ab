@@ -1,0 +1,182 @@
+---
+title: "ELK Stack"
+description: "Learn log management and analysis with Elasticsearch, Logstash, and Kibana"
+icon: "chart-line"
+---
+
+## Overview
+
+Days 64-70 introduce the ELK Stack (Elasticsearch, Logstash, and Kibana), a powerful suite of tools for log management, analysis, and visualization. The ELK Stack is fundamental to Security Information and Event Management (SIEM) and is widely used in security operations centers (SOCs).
+
+## What is the ELK Stack?
+
+The ELK Stack is a collection of three open-source products:
+
+- **Elasticsearch**: A distributed search and analytics engine
+- **Logstash**: A server-side data processing pipeline
+- **Kibana**: A visualization and exploration tool
+
+Together, they provide a complete solution for ingesting, processing, storing, searching, and visualizing log data from various sources.
+
+<Note>
+  **SIEM Foundation:** The ELK Stack forms the foundation of many SIEM solutions. Understanding how to collect, parse, and analyze logs is crucial for threat detection, incident response, and security monitoring. These skills directly apply to enterprise SIEM platforms like Splunk, QRadar, and ArcSight.
+</Note>
+
+## The Three Pillars
+
+### Elasticsearch
+
+**What it does**: Stores and indexes your data, making it quickly searchable.
+
+**Key Features**:
+- Distributed, RESTful search engine
+- Real-time data indexing
+- Full-text search capabilities
+- JSON document storage
+- Horizontal scalability
+
+**Security Use Cases**:
+- Storing security logs and events
+- Fast searching across terabytes of log data
+- Aggregating data from multiple sources
+- Real-time threat intelligence lookups
+
+### Logstash
+
+**What it does**: Ingests, transforms, and enriches data before sending it to Elasticsearch.
+
+**Key Features**:
+- Multiple input plugins (files, syslog, beats, etc.)
+- Rich filter plugins for parsing and transforming data
+- Output to various destinations
+- Pipeline configuration with conditionals
+
+**Security Use Cases**:
+- Normalizing logs from different sources
+- Parsing firewall, IDS/IPS, and web server logs
+- Enriching events with threat intelligence
+- Filtering and routing security events
+
+### Kibana
+
+**What it does**: Provides visualization and exploration of data stored in Elasticsearch.
+
+**Key Features**:
+- Interactive visualizations and dashboards
+- Real-time data exploration
+- Advanced querying interface
+- Alerting and monitoring
+- Machine learning integration
+
+**Security Use Cases**:
+- Creating security dashboards
+- Visualizing attack patterns
+- Investigating security incidents
+- Monitoring security metrics and KPIs
+- Building security operation workflows
+
+## Learning Resources
+
+<Card title="Complete ELK Stack Tutorial" icon="book" href="https://logz.io/learn/complete-guide-elk-stack/">
+  Comprehensive guide from Logz.io covering installation, configuration, and best practices
+</Card>
+
+<Card title="Elastic Stack Features" icon="layer-group" href="https://www.elastic.co/elastic-stack/features">
+  Official documentation and feature overview from Elastic
+</Card>
+
+## Study Plan (Days 64-70)
+
+<Steps>
+  <Step title="Understand the Architecture (Day 64)">
+    - Learn how the three components work together
+    - Understand data flow: ingestion → processing → storage → visualization
+    - Review the ELK Stack architecture diagrams
+  </Step>
+  
+  <Step title="Elasticsearch Fundamentals (Days 65-66)">
+    - Install and configure Elasticsearch
+    - Learn about indices, documents, and mappings
+    - Practice basic search queries and aggregations
+    - Understand RESTful API interactions
+  </Step>
+  
+  <Step title="Logstash Configuration (Days 67-68)">
+    - Set up Logstash with various input sources
+    - Configure filters to parse common log formats
+    - Practice grok patterns for log parsing
+    - Create pipelines for security log processing
+  </Step>
+  
+  <Step title="Kibana Visualization (Days 69-70)">
+    - Connect Kibana to Elasticsearch
+    - Create visualizations (charts, graphs, maps)
+    - Build security monitoring dashboards
+    - Practice using the Discover interface for log exploration
+  </Step>
+</Steps>
+
+## ELK Stack in Security Operations
+
+### Log Sources to Monitor
+
+- **Network Devices**: Firewalls, routers, switches
+- **Security Tools**: IDS/IPS (Suricata, Snort), antivirus, EDR
+- **Servers**: Web servers, application servers, databases
+- **Operating Systems**: Windows Event Logs, Linux syslogs
+- **Applications**: Custom application logs
+- **Cloud Services**: AWS CloudTrail, Azure logs, GCP logs
+
+### Common Security Use Cases
+
+1. **Threat Detection**: Identify suspicious activities and patterns
+2. **Incident Response**: Investigate security incidents with rapid log searches
+3. **Compliance Monitoring**: Track and report on compliance requirements
+4. **User Behavior Analytics**: Detect anomalous user activities
+5. **Vulnerability Management**: Track and visualize vulnerability scan results
+
+## Key Skills to Develop
+
+<CardGroup cols={2}>
+  <Card title="Log Parsing" icon="filter">
+    Master grok patterns and parsing various log formats including syslog, JSON, and custom formats
+  </Card>
+  
+  <Card title="Query Languages" icon="magnifying-glass">
+    Learn Elasticsearch Query DSL and Kibana Query Language (KQL) for effective log searching
+  </Card>
+  
+  <Card title="Dashboard Design" icon="table-columns">
+    Create meaningful security dashboards that highlight critical metrics and anomalies
+  </Card>
+  
+  <Card title="Alert Configuration" icon="bell">
+    Set up alerts for security events that require immediate attention
+  </Card>
+</CardGroup>
+
+<Tip>
+  **Start Small, Think Big:** Begin by setting up the ELK Stack with a single log source (like your own system logs). Once you understand the basics, gradually add more sources. This approach helps you learn without becoming overwhelmed by data.
+</Tip>
+
+## Practical Exercises
+
+1. **Set up a local ELK Stack** using Docker or virtual machines
+2. **Ingest web server logs** (Apache or Nginx) into Elasticsearch via Logstash
+3. **Parse firewall logs** using grok patterns
+4. **Create a security dashboard** showing failed login attempts, traffic patterns, and top source IPs
+5. **Set up an alert** for detecting brute force attacks (multiple failed logins)
+6. **Practice searching** for specific events using Elasticsearch queries
+
+## Beyond ELK
+
+The skills you learn with the ELK Stack transfer directly to:
+
+- **Elastic Security (SIEM)**: Elastic's native security solution
+- **Splunk**: Another leading SIEM platform
+- **Other SIEM tools**: QRadar, ArcSight, LogRhythm
+- **Cloud-native logging**: AWS CloudWatch, Azure Monitor, GCP Logging
+
+## Next Steps
+
+After mastering the ELK Stack, you'll move on to cloud platforms (GCP, AWS, or Azure) to learn about cloud security, infrastructure, and services that are essential for modern cybersecurity roles.

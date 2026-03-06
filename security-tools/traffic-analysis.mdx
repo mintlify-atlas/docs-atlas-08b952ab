@@ -1,0 +1,143 @@
+---
+title: "Traffic Analysis"
+description: "Master network traffic analysis with Wireshark, TCPdump, and Suricata"
+icon: "network-wired"
+---
+
+## Overview
+
+Days 43-56 focus on traffic analysis, a critical skill for understanding network behavior, detecting threats, and investigating security incidents. You'll learn to capture, analyze, and interpret network packets using industry-standard tools.
+
+## Learning Objectives
+
+By the end of this section, you'll be able to:
+
+- Capture and analyze network traffic with Wireshark
+- Use TCPdump for command-line packet analysis
+- Configure and deploy Suricata as an IDS/IPS
+- Identify suspicious network patterns and anomalies
+- Perform protocol analysis and troubleshooting
+
+## Tools Covered
+
+<Tabs>
+  <Tab title="Wireshark">
+    ### Wireshark
+    
+    Wireshark is the world's leading network protocol analyzer. It allows you to see what's happening on your network at a microscopic level and is the de facto standard across many industries and educational institutions.
+    
+    **Key Features:**
+    - Deep inspection of hundreds of protocols
+    - Live capture and offline analysis
+    - Rich VoIP analysis
+    - Powerful display filters
+    - Cross-platform support
+    
+    **Learning Resources:**
+    - [Wireshark University](https://www.wireshark.org/#educationalContent) - Official educational content
+    - [Wireshark Tutorial on guru99](https://guru99.com/wireshark-tutorial.html) - Comprehensive written guide
+    
+    **Video Tutorial:**
+    - [Wireshark Tutorial for Beginners series](https://www.youtube.com/watch?v=NjvR4LmwcMU&list=PLBf0hzazHTGPgyxeEj_9LBHiqjtNEjsgt&pp=iAQB) - Step-by-step video course
+  </Tab>
+  
+  <Tab title="TCPdump">
+    ### TCPdump
+    
+    TCPdump is a powerful command-line packet analyzer. It's lightweight, fast, and perfect for remote systems or scenarios where a GUI isn't available.
+    
+    **Key Features:**
+    - Command-line interface for scripting
+    - Minimal resource usage
+    - Precise filtering capabilities
+    - Available on most Unix-like systems
+    - Can save captures for later analysis in Wireshark
+    
+    **Learning Resources:**
+    - [TCPdump Tutorial by DanielMiessler](https://danielmiessler.com/study/tcpdump/) - Detailed command reference and examples
+  </Tab>
+  
+  <Tab title="Suricata">
+    ### Suricata
+    
+    Suricata is a high-performance Network IDS, IPS, and Network Security Monitoring engine. It's open source and owned by a community-run non-profit foundation, the Open Information Security Foundation (OISF).
+    
+    **Key Features:**
+    - Multi-threaded architecture for high performance
+    - IDS and IPS modes
+    - Protocol identification and parsing
+    - File extraction and logging
+    - Lua scripting support
+    
+    **Learning Resources:**
+    - [Suricata on pfSense guide](https://doc.pfsense.org/index.php/Suricata) - Deployment and configuration
+    
+    **Video Tutorial:**
+    - [Suricata Network IDS/IPS](https://www.youtube.com/watch?v=S0-vsjhPDN0&pp=ygUhIFN1cmljYXRhIElEUy9JUFMgU3lzdGVtIFR1dG9yaWFs) - Complete system tutorial
+  </Tab>
+</Tabs>
+
+## Resource Hub
+
+<CardGroup cols={2}>
+  <Card title="Wireshark University" icon="graduation-cap" href="https://www.wireshark.org/#educationalContent">
+    Official training courses and certification programs
+  </Card>
+  
+  <Card title="Wireshark Tutorial" icon="book" href="https://guru99.com/wireshark-tutorial.html">
+    Comprehensive beginner-friendly written guide
+  </Card>
+  
+  <Card title="TCPdump Study Guide" icon="terminal" href="https://danielmiessler.com/study/tcpdump/">
+    Command-line packet analysis reference
+  </Card>
+  
+  <Card title="Suricata Documentation" icon="shield-halved" href="https://doc.pfsense.org/index.php/Suricata">
+    IDS/IPS deployment and configuration guide
+  </Card>
+</CardGroup>
+
+## Video Tutorials
+
+<CardGroup cols={2}>
+  <Card title="Wireshark for Beginners" icon="youtube" href="https://www.youtube.com/watch?v=NjvR4LmwcMU&list=PLBf0hzazHTGPgyxeEj_9LBHiqjtNEjsgt&pp=iAQB">
+    Complete video series covering Wireshark basics to advanced topics
+  </Card>
+  
+  <Card title="Suricata IDS/IPS Tutorial" icon="youtube" href="https://www.youtube.com/watch?v=S0-vsjhPDN0">
+    Learn to deploy and configure Suricata for network monitoring
+  </Card>
+</CardGroup>
+
+## Study Plan (Days 43-56)
+
+<Steps>
+  <Step title="Wireshark Fundamentals (Days 43-47)">
+    - Complete Wireshark University course
+    - Follow the guru99 tutorial
+    - Practice capturing and filtering packets
+    - Watch the beginner video series
+  </Step>
+  
+  <Step title="TCPdump Mastery (Days 48-51)">
+    - Read through the TCPdump tutorial
+    - Practice command-line packet capture
+    - Learn filtering syntax and expressions
+    - Compare captures with Wireshark
+  </Step>
+  
+  <Step title="Suricata IDS/IPS (Days 52-56)">
+    - Study the Suricata documentation
+    - Watch the IDS/IPS tutorial video
+    - Set up Suricata in a test environment
+    - Configure rules and test detection
+  </Step>
+</Steps>
+
+<Tip>
+  **Pro Tip:** Practice analyzing real network traffic by capturing your own network activity. Start with simple protocols like HTTP and DNS before moving to more complex ones like TLS and SSH.
+</Tip>
+
+## Next Steps
+
+After mastering traffic analysis, you'll move on to [Git Version Control](/security-tools/git) to learn essential development and collaboration skills used in security teams.
