@@ -1,0 +1,103 @@
+{
+  "projectType": "general",
+  "projectName": "90 Days of Cybersecurity",
+  "projectDescription": "A comprehensive 90-day structured study plan for learning cybersecurity fundamentals, tools, and practices.",
+  "theme": "aspen",
+  "primaryColor": "#94cb04",
+  "lightColor": "#545454",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Learning Path",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "goals-and-audience"
+            ]
+          },
+          {
+            "group": "Foundation (Days 1-14)",
+            "pages": [
+              "foundation/network-plus",
+              "foundation/security-plus"
+            ]
+          },
+          {
+            "group": "Core Skills (Days 15-42)",
+            "pages": [
+              "core-skills/linux",
+              "core-skills/python"
+            ]
+          },
+          {
+            "group": "Security Tools (Days 43-70)",
+            "pages": [
+              "security-tools/traffic-analysis",
+              "security-tools/git",
+              "security-tools/elk-stack"
+            ]
+          },
+          {
+            "group": "Cloud Platforms (Days 71-84)",
+            "pages": [
+              "cloud-platforms/overview",
+              "cloud-platforms/gcp",
+              "cloud-platforms/aws",
+              "cloud-platforms/azure"
+            ]
+          },
+          {
+            "group": "Advanced Topics (Days 85-90)",
+            "pages": [
+              "advanced/ethical-hacking"
+            ]
+          },
+          {
+            "group": "Career Preparation (Days 91-95)",
+            "pages": [
+              "career/resume-guide",
+              "career/job-search"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Resources",
+        "groups": [
+          {
+            "group": "Reference",
+            "pages": [
+              "resources/learning-resources",
+              "resources/contributing"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Structured 90-day cybersecurity learning roadmap",
+    "Coverage of CompTIA Network+ and Security+ concepts",
+    "Hands-on tutorials for Linux, Python, and security tools",
+    "Traffic analysis with Wireshark, TCPdump, and Suricata",
+    "Cloud security training for GCP, AWS, and Azure",
+    "Ethical hacking and penetration testing introduction",
+    "SIEM and log analysis with ELK Stack",
+    "Career preparation with resume templates and job search strategies"
+  ],
+  "publicApiSurface": [
+    "Day 1-7: Network+ Concepts (Professor Messer N10-009)",
+    "Day 8-14: Security+ Concepts (Professor Messer SY0-701)",
+    "Day 15-28: Linux Tutorials (Linux Journey, Cisco NetAcad)",
+    "Day 29-42: Python Programming (Codecademy, Real Python)",
+    "Day 43-56: Traffic Analysis (Wireshark, TCPdump, Suricata)",
+    "Day 57-63: Git Version Control",
+    "Day 64-70: ELK Stack (Elasticsearch, Logstash, Kibana)",
+    "Day 71-84: Cloud Platforms (GCP/AWS/Azure)",
+    "Day 85-90: Ethical Hacking (Hack The Box, VulnHub)",
+    "Day 91-95: Resume and Job Application Guidance"
+  ]
+}
